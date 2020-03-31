@@ -1,14 +1,15 @@
+
 <div class="container">
   <div class="card border-0 shadow my-5">
-  <div class="card-body p-5">
+  <div class="card-body p-7">
   <div style="height: auto">
   <table class="table table-striped" border="1">
   <thead>
       <tr>
-        <!-- <th scope="col">#</th> -->
         <th scope="col">Name of the conference</th>
         <th scope="col">City</th>
         <th scope="col">Conference website</th>
+        <th scope="col">Venue</th>
         <th scope="col">Date</th>
         <th scope="col">Entry Type</th>
       </tr>
@@ -16,10 +17,10 @@
     <tbody>
 
         <tr *ngFor="let data of all">
-
           <td> {{data.confName}} </td>  
           <td> {{data.city}} </td> 
           <td> {{data.confUrl}} </td>
+          <td>{{data.venue}}</td>
           <td> {{data.confStartDate}} </td>
           <td>{{data.entryType}}</td>
           
